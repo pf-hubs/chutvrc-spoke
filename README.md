@@ -42,7 +42,7 @@ It will be updated to migration information considering the current status of Mo
 [![CircleCI](https://circleci.com/gh/mozilla/Spoke.svg?style=svg)](https://circleci.com/gh/mozilla/Spoke)
 
 
-  **Easily create custom 3D environments for [Mozilla Hubs](https://hubs.mozilla.com).**
+  **Easily create custom 3D environments for Hubs.**
 
 **[Launch Spoke](https://hubs.mozilla.com/spoke)**
 
