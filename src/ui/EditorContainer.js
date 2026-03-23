@@ -391,7 +391,7 @@ class EditorContainer extends Component {
           },
           {
             name: "Keyboard and Mouse Controls",
-            action: () => window.open("https://hubs.mozilla.com/docs/spoke-controls.html")
+            action: () => window.open("https://docs.hubsfoundation.org/spoke-controls.html")
           },
           {
             name: "Get Support",
@@ -399,22 +399,22 @@ class EditorContainer extends Component {
           },
           {
             name: "Submit Feedback",
-            action: () => window.open("https://forms.gle/2PAFXKwW1SXdfSK17")
+            action: () => window.open("https://discord.gg/wHmY4nd")
           },
           {
             name: "Report an Issue",
-            action: () => window.open("https://github.com/mozilla/Spoke/issues/new")
+            action: () => window.open("https://github.com/Hubs-Foundation/Spoke/issues/new")
           },
           {
             name: "Join us on Discord",
             action: () => window.open("https://discord.gg/wHmY4nd")
           },
           {
-            name: "Terms of Use",
+            name: "Terms of Use (TBD)",
             action: () => window.open(TERMS)
           },
           {
-            name: "Privacy Notice",
+            name: "Privacy Notice (TBD)",
             action: () => window.open(PRIVACY)
           }
         ]
@@ -436,7 +436,7 @@ class EditorContainer extends Component {
       },
       {
         name: "Submit Feedback",
-        action: () => window.open("https://forms.gle/2PAFXKwW1SXdfSK17")
+        action: () => window.open("https://discord.gg/wHmY4nd")
       }
     ];
   };

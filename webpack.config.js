@@ -7,7 +7,7 @@ if (process.env.NODE_ENV === "production") {
   dotenv.config({ path: ".env.test" });
 } else {
   dotenv.config({ path: ".env" });
-  dotenv.config({ path: ".env.defaults" });
+  // dotenv.config({ path: ".env.defaults" });
 }
 
 const fs = require("fs");
@@ -71,7 +71,7 @@ function createHTTPSConfig() {
 const defaultHostName = "localhost";
 const host = process.env.HOST_IP || defaultHostName;
 const port = process.env.HOST_PORT || 9090;
-const internalHostname = process.env.INTERNAL_HOSTNAME || defaultHostName;
+// const internalHostname = process.env.INTERNAL_HOSTNAME || defaultHostName;
 
 module.exports = env => {
   return {
@@ -89,7 +89,8 @@ module.exports = env => {
       public: `${host}:${port}`,
       publicPath: process.env.BASE_ASSETS_PATH || "",
       useLocalIp: true,
-      allowedHosts: [host, internalHostname],
+      // allowedHosts: [host, internalHostname],
+      disableHostCheck: true,
       headers: {
         "Access-Control-Allow-Origin": "*"
       },
@@ -130,16 +131,6 @@ module.exports = env => {
           test: /\.(glb)(\?.*$|$)/,
           use: {
             loader: "file-loader",
-            options: {
-              name: "[name]-[hash].[ext]",
-              outputPath: "assets/models"
-            }
-          }
-        },
-        {
-          test: /\.(gltf)(\?.*$|$)/,
-          use: {
-            loader: "gltf-webpack-loader",
             options: {
               name: "[name]-[hash].[ext]",
               outputPath: "assets/models"
@@ -266,9 +257,9 @@ module.exports = env => {
         SENTRY_DSN: null,
         GA_TRACKING_ID: null,
         IS_MOZ: false,
-        GITHUB_ORG: "mozilla",
+        GITHUB_ORG: "Hubs-Foundation",
         GITHUB_REPO: "spoke",
-        GITHUB_PUBLIC_TOKEN: "ghp_SAFEPB2zzes9TEpAOSx2McNjJLQ1GXLBES2FsfWU"
+        GITHUB_PUBLIC_TOKEN: ""
       })
     ]
   };
