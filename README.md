@@ -2,6 +2,10 @@
 
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
+> **Recommended: use [chutvrc-hubs-compose](https://github.com/pf-hubs/chutvrc-hubs-compose) to run chutvrc.**
+>
+> `chutvrc-hubs-compose` orchestrates this Spoke editor together with Reticulum, Dialog, and the Hubs client through Docker Compose. It clones each service (including this repo) onto your machine, builds the images, generates local SSL certificates, and starts everything with one double-click on macOS / Windows. Setting these services up individually — as described later in this README — is significantly more involved.
+
 The editor-side code for [chutvrc](https://github.com/pf-hubs/chutvrc-spoke), forked from [Spoke](https://github.com/mozilla/Spoke), to easily create custom 3D environments.
 
 ## chutvrc features
